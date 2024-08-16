@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--Estilos CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/faviconDS.png" />
+
+  <!-- Animaciones CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>David | Desarrollador Web</title>
+</head>
+
+<body>
+  <!-- Barra de Navegación -->
+  <nav>
+    <div class="navtitulo">
+      <h1>Hola! Soy David...</h1>
+      <h2>Desarrollador Web</h2>
+    </div>
+    <ul class="navegacion">
+      <li><a href="#about" class="nav-link">Inicio</a></li>
+      <li><a href="#mas-sobre" class="nav-link">Acerca de Mí</a></li>
+      <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+      <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+      <li><a href="#contacto" class="nav-link">Contacto</a></li>
+    </ul>
+    <button class="menu-hamburguesa" id="menu-hamburguesa">
+      <ion-icon class="barras" name="menu-outline"></ion-icon>
+    </button>
+  </nav>
+
+  <!-- Sección Hero  -->
+
+  <section class="hero" id="about">
+    <img src="assets/images/perfil.jpg" alt="jane-doe" loading="lazy" class="hero-img" />
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-titulo">Sobre Mí</h2>
+      <p class="bio-texto">
+        Hola! Bienvenido a mi portfolio. Te invito a que conozcas mis trabajos y mi pasión por la informática.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sobre Mí -->
+
+  <section class="mas-sobre" id="mas-sobre">
+    <h2>Más sobre mí</h2>
+    <ol class="lista-profesional">
+      <li>Dominio de varios lenguajes de programación y frameworks relacionados</li>
+      <li>Habilidad para crear estructuras de datos eficientes para gestionar la información de los sistemas</li>
+      <li>Capacidad para colaborar con otros desarrolladores, diseñadores y profesionales de diferentes áreas para lograr objetivos comunes</li>
+      <li>Experiencia en el ciclo de vida completo de desarrollo de software, incluyendo diseño, implementación, pruebas y mantenimiento</li>
+      <li>Habilidad para identificar y resolver problemas complejos de manera eficiente y efectiva</li>
+      <li>Habilidad para comunicar ideas técnicas de manera clara y efectiva tanto a colegas técnicos como a personas no técnicas</li>
+      <li>Actitud de aprendizaje constante para mantenerse actualizado con las últimas tecnologías y mejores prácticas en el campo de la programación</li>
+  </ol>
+ 
+  </section>
+
+  <!-- Sección Habilidades -->
+
+  <section class="habilidades" id="habilidades">
+    <h2 class="encabezado-habilidad">Mis mejores habilidades</h2>
+
+    <div class="contenedor-habilidades">
+      <div class="first-set animate__animated animate__pulse">
+        <img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+
+      </div>
+
+      <div class="second-set animate__animated animate__pulse">
+        <img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/logo php.png" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/logo base de datos.png" alt="" loading="lazy" class="icon icon-card" />
+        <!-- <img src="assets/icons/icons8-react-native.svg" alt="" loading="lazy" class="icon icon-card" /> -->
+        <!-- <img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="icon icon-card" /> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Proyectos -->
+
+  <section class="proyectos" id="proyectos">
+    <h2 class="titulo-de-proyectos">Algunos de mis proyectos recientes</h2>
+    <div class="contenedor-de-proyectos">
+
+      <div class="contenedor-de-proyecto tarjeta-de-proyecto">
+        
+        <img src="assets/images/agenda.png" alt="netflic-clone" loading="lazy" class="foto-de-proyecto" />
+        <h3 class="titulo-de-proyecto">Agenda Institucional</h3>
+        <p class="detalles-de-proyecto">
+          Un sistema de agenda personalizado y una App para el seguimiento on line de cada actividad de la organización
+        </p>
+        <!-- <a href="#" target="_blank" class="project-link">Check it Out</a> -->
+      </div>
+
+      <div class="contenedor-de-proyecto tarjeta-de-proyecto">
+        <img src="assets/images/calculadoracientifica.png" alt="CalcPlus" loading="lazy" class="foto-de-proyecto" />
+        <h3 class="titulo-de-proyecto">Calculadora científica</h3>
+        <p class="detalles-de-proyecto">
+          CalcPlus científica con una interfaz intuitiva y elegante. Ofrece funciones básicas y avanzadas, incluyendo una calculadora herramientas de conversión de unidades.
+        </p>
+        <!-- <a href="#" target="_blank" class="project-link">Check it Out</a> -->
+      </div>
+
+      <div class="contenedor-de-proyecto tarjeta-de-proyecto">
+        <img src="assets/images/juegodememoria.png" alt="Juego de memoria" loading="lazy" class="foto-de-proyecto" />
+        <h3 class="titulo-de-proyecto">Juego de memoria</h3>
+        <p class="detalles-de-proyecto">
+          Tradicional juego de memoria donde tienes que ir descubriendo las fichas y hacer que dos de ellas coincidan, con un contador de tiempo.
+        </p>
+        <!-- <a href="#" target="_blank" class="enlace-de-proyecto">Echale un vistazo!</a> -->
+      </div>
+
+      <div class="contenedor-de-proyecto tarjeta-de-proyecto">
+        <img src="assets/images/burguerlandia.png" alt="Burguerlandia" loading="lazy" class="foto-de-proyecto" />
+        <h3 class="titulo-de-proyecto">Burguerlandia</h3>
+        <p class="detalles-de-proyecto">
+          Sistema de administración de menúes para una carta digital
+        </p>
+        <!-- <a href="#" target="_blank" class="enlace-de-proyecto">Echale un vistazo!</a> -->
+      </div>
+
+      <div class="contenedor-de-proyecto tarjeta-de-proyecto">
+        <img src="assets/images/silogismos.png" alt="Silogismos" loading="lazy" class="foto-de-proyecto" />
+        <h3 class="titulo-de-proyecto">Silogismos</h3>
+        <p class="detalles-de-proyecto">
+          APP para crear razonamientos lógicos basados en la teoría de silogismos
+        </p>
+        <!-- <a href="#" target="_blank" class="enlace-de-proyecto">Echale un vistazo!</a> -->
+      </div>
+
+      <div class="contenedor-de-proyecto tarjeta-de-proyecto">
+        <img src="assets/images/sueldos.png" alt="Sueldos" loading="lazy" class="foto-de-proyecto" />
+        <h3 class="titulo-de-proyecto">Sueldos</h3>
+        <p class="detalles-de-proyecto">
+          Generador de recibos de sueldo en formato PDF
+        </p>
+        <!-- <a href="#" target="_blank" class="enlace-de-proyecto">Echale un vistazo!</a> -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sección Contacto-->
+
+  <section class="contacto" id="contacto">
+    <h2>Contactame</h2>
+    <div class="contenedor-formulario-contacto">
+      <div class="formulario-contacto">
+        <form action="https://formspree.io/f/xyylngw" method="POST">
+          <div class="control-formulario">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="sender-name" placeholder="Escribe tu nombre" class="input-field"
+              required />
+          </div>
+          <div class="control-formulario">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="sender-email" placeholder="Ingreso tu correo electrónico"
+              class="input-field" required />
+          </div>
+          <div class="control-formulario">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" cols="60" rows="10" placeholder="Escribe tu mensaje" name="mensaje"
+              class="input-field" required></textarea>
+          </div>
+          <input type="submit" value="Enviar" id="submit-btn" class="submit-btn" />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de redes sociales - Fijado a la derecha -->
+
+  <div class="sociales">
+    
+    <a href="https://www.instagram.com/davidsquillari/" target="_blank"
+      ><img src="assets/icons/icons8-instagram-64.png" alt="Github" class="socicon"
+    /></a>
+    <a href="https://www.linkedin.com/in/david-squillari-390a3858/" target="_blank"
+      ><img src="assets/icons/icons8-linked-in-48.png" alt="Github" class="socicon"
+    /></a>
+  </div>
+
+  <!-- Vuelve al comienzo  -->
+
+  <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"
+      ><img
+        src="assets/icons/icons8-scroll-up-48.png"
+        class="socicon flecha-arriba"
+        alt="desplazarse-hacia-arriba"
+    /></i>
+
+  <!-- Sección Footer  -->
+
+  <footer>
+    <p class="copy">&copy; Copyright 2024</p>
+    <p class="copy">
+      Creado por <a href="https://www.instagram.com/davidsquillari/" target="_blank"
+        >David Squillari</a
+      >
+    </p>
+</footer>
+
+  <!-- Website scripts -->
+  <script src="assets/js/app.js"></script>
+
+  <!-- Ion icons scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
