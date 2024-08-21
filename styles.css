@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+  --color-font: rgb(122, 112, 112);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Estilos para el menú */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+h1{
+  font-size: 30px;
+}
+
+h2{
+  font-size: 0.8rem;
+  color: #999;
+  font-weight: 400;
+
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #ff9800;
+}
+
+/* Estilos para el icono del menú hamburguesa */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Estilos para las secciones */
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #ccc;
+}
+
+#seccion1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#seccion1 img{
+  border-radius: 50%;
+}
+
+#seccion1 p{
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+#seccion2 {
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-child(odd) {
+  background-color: #e0e0e0;
+}
+
+section h1 {
+  font-size: 48px;
+}
+
+/* Espaciado adicional para evitar que el contenido se superponga con el menú */
+body {
+  padding-top: 60px; /* Ajusta este valor según la altura del menú */
+}
+
+/* Estilos responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+  }
+
+  nav ul.show {
+      display: flex;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+      text-align: center;
+  }
+
+  #seccion1 {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #seccion1 p{
+    margin-top: 15px;
+    width: 15rem;
+  }
+
+  #seccion1 img{
+    width: 15rem;
+  }
+  .hamburger {
+      display: block;
+  }
+}

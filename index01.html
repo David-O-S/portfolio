@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Menú Fijo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+              <h1>Hola! Soy David...</h1>
+              <h2>Desarrollador Web</h2>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul id="menu">
+                <li><a href="#seccion1">Inicio</a></li>
+                <li><a href="#seccion2">Acerca de mi</a></li>
+                <li><a href="#seccion3">Habilidades</a></li>
+                <li><a href="#seccion4">Proyectos</a></li>
+                <li><a href="#seccion5">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="seccion1">
+      <img src="assets/images/perfil.jpg" alt="jane-doe" loading="lazy" class="hero-img" />
+      <p>
+          Hola! Bienvenido a mi portfolio.<br> Te invito a que conozcas mis trabajos y mi pasión por la informática.
+      </p>
+    </section>
+    <section id="seccion2">
+        <h1>Más sobre mí</h1>
+        <ol class="lista-profesional">
+          <li>Dominio de varios lenguajes de programación y frameworks relacionados</li>
+          <li>Habilidad para crear estructuras de datos eficientes para gestionar la información de los sistemas</li>
+          <li>Capacidad para colaborar con otros desarrolladores, diseñadores y profesionales de diferentes áreas para lograr objetivos comunes</li>
+          <li>Experiencia en el ciclo de vida completo de desarrollo de software, incluyendo diseño, implementación, pruebas y mantenimiento</li>
+          <li>Habilidad para identificar y resolver problemas complejos de manera eficiente y efectiva</li>
+          <li>Habilidad para comunicar ideas técnicas de manera clara y efectiva tanto a colegas técnicos como a personas no técnicas</li>
+          <li>Actitud de aprendizaje constante para mantenerse actualizado con las últimas tecnologías y mejores prácticas en el campo de la programación</li>
+      </ol>
+    </section>
+    <section id="seccion3">
+        <h1>Sección 3</h1>
+    </section>
+    <section id="seccion4">
+        <h1>Sección 4</h1>
+    </section>
+    <section id="seccion5">
+        <h1>Sección 5</h1>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
