@@ -156,13 +156,24 @@
     </div>
 
     <script>
-        window.location.reload(true); // Recarga la página desde el servidor
+        // Verifica si la página ya se ha recargado
+        if (!sessionStorage.getItem('reloaded')) {
+            // Establece la bandera para indicar que la página se ha recargado
+            sessionStorage.setItem('reloaded', 'true');
+
+            // Recarga la página desde el servidor
+            window.location.reload(true);
+        } else {
+            // Limpia la bandera para permitir recargar en futuras sesiones
+            sessionStorage.removeItem('reloaded');
+        }
+
 
         function toggleMenu() {
             let menu = document.getElementById('menu');
             menu.classList.toggle('show');
         }
-        
+
         function cerrarMenu() {
             let menu = document.getElementById('menu');
             menu.classList.toggle('show');
