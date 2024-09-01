@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Desarrolador web</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="assets/icons/icono.png" type="image/x-icon">
@@ -16,15 +17,18 @@
                 <h1>Hola! Soy David...</h1>
                 <h2>Desarrollador Web</h2>
             </div>
-            <div class="hamburger" onclick="toggleMenu()">
+            <div class="hamburger menu-hamburguesa" onclick="toggleMenu()" id="menu-hamburguesa">
                 &#9776;
             </div>
-            <ul id="menu">
-                <li><a href="#seccion1">Inicio</a></li>
-                <li><a href="#seccion2">Acerca de mi</a></li>
-                <li><a href="#seccion3">Habilidades</a></li>
-                <li><a href="#seccion4">Proyectos</a></li>
-                <li><a href="#seccion5">Contacto</a></li>
+            <!-- <button class="menu-hamburguesa" id="menu-hamburguesa">
+                <ion-icon class="barras" name="menu-outline"></ion-icon>
+              </button> -->
+            <ul id="menu" class="navegacion">
+                <li><a href="#seccion1" class="nav-link">Inicio</a></li>
+                <li><a href="#seccion2" class="nav-link">Acerca de mi</a></li>
+                <li><a href="#seccion3" class="nav-link">Habilidades</a></li>
+                <li><a href="#seccion4" class="nav-link">Proyectos</a></li>
+                <li><a href="#seccion5" class="nav-link">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -153,9 +157,22 @@
 
     <script>
         function toggleMenu() {
-            var menu = document.getElementById('menu');
+            let menu = document.getElementById('menu');
             menu.classList.toggle('show');
         }
+        
+        function cerrarMenu() {
+            let menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+
+        // Obtener todos los enlaces dentro de la lista
+        const links = document.querySelectorAll('#menu a');
+
+        // Añadir un event listener a cada enlace
+        links.forEach(link => {
+            link.addEventListener('click', cerrarMenu);
+        });
     </script>
 
 
@@ -169,6 +186,8 @@
             window.open('https://mail.google.com/mail/?view=cm&fs=1&to=' + email + '&su=' + subject + '&body=' + body);
         });
     </script>
+
+
 </body>
 
 </html>
