@@ -156,17 +156,25 @@
     </div>
 
     <script>
-        // Verifica si la página ya se ha recargado
-        if (!sessionStorage.getItem('reloaded')) {
-            // Establece la bandera para indicar que la página se ha recargado
-            sessionStorage.setItem('reloaded', 'true');
+        //Actualiza la pagina al deslizar el dedo hacia abajo
+        let touchStartY = 0;
+        let touchEndY = 0;
 
-            // Recarga la página desde el servidor
-            window.location.reload(true);
-        } else {
-            // Limpia la bandera para permitir recargar en futuras sesiones
-            sessionStorage.removeItem('reloaded');
-        }
+        window.addEventListener('touchstart', (e) => {
+            touchStartY = e.touches[0].clientY;  // Registrar la posición inicial del toque
+        });
+
+        window.addEventListener('touchmove', (e) => {
+            touchEndY = e.touches[0].clientY;  // Registrar la posición actual mientras se mueve el dedo
+        });
+
+        window.addEventListener('touchend', () => {
+            // Si el usuario arrastra hacia abajo y el desplazamiento inicial es desde la parte superior
+            if (touchEndY > touchStartY && window.scrollY === 0) {
+                window.location.reload();  // Recargar la página
+            }
+        });
+
 
 
         function toggleMenu() {
